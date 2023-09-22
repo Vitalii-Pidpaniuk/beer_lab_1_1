@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -136,10 +135,10 @@ body {
 }
 
 .block2 {
+  width: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
   padding: 1.5%;
   background-color: #3E3F43;
 }
@@ -168,8 +167,8 @@ body {
 .block4 {
   padding: 5%;
   margin: 2%;
+  width: 100%;
   background-color: white;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -181,11 +180,15 @@ body {
 .block4 img{
   border: 1px solid rgb(220, 220, 220);
   padding: 2%;
-  width: 40%;
-  flex-shrink: 0;
-  
   border-radius: 15px;
+  max-width: 100%;
+  height: auto;
 }
+
+.photo{
+  width: 50%;
+}
+
 
 .block4 h1, h2{
   font-size: 30px;
@@ -193,7 +196,6 @@ body {
 }
 
 .description{
-/*  padding: 5%;*/
   padding-top: 5%;
   display: flex;
   justify-content: start;
@@ -277,7 +279,7 @@ body {
 
 .block5 {
   background-color: white;
-  width: auto;
+  width: 15%;
   background-color: #3E3F43;
   padding: 20px;
   color: #fff;

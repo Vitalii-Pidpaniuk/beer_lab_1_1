@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -81,8 +80,8 @@ body {
 
 
 .content{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -90,6 +89,7 @@ body {
 .content div{
   font-size: 20px;
 }
+
 
 .navbar {
   top: 0;
@@ -109,6 +109,7 @@ body {
   color: white;
   padding: 14px 20px;
   text-decoration: none;
+  flex: 1;
 }
 .navbar a:hover {
   background-color: #ddd;
@@ -127,7 +128,7 @@ body {
 .row{
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
+  flex:1;
 }
 
 .column{
@@ -137,10 +138,10 @@ body {
 }
 
 .block2 {
+  width: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
   padding: 2%;
   background-color: #3E3F43;
 }
@@ -168,9 +169,13 @@ body {
 }
 
 .block4 {
+  height: 100%;
+  width: 70%;
   margin: 2%;
   background-color: white;
   flex-grow: 1;
+
+  flex-direction: column;
 }
 
 .block4 img{
@@ -212,8 +217,11 @@ body {
 }
 
 .block5 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  width: auto;
+  width: 15%;
   background-color: #3E3F43;
   padding: 20px;
   color: #fff;
