@@ -84,33 +84,32 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
 }
 
-.content div{
-  font-size: 20px;
-}
 
 
 .navbar {
+  font-size: 20px;
   top: 0;
-  width: 100%;
   position: sticky;
   background-color: #333;
-  position: sticky;
   color: white;  
   display: flex;
   text-align: center;
-  flex-shrink: 1;
   align-items: center;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .navbar a{
+  flex-grow: 1;
   color: white;
   padding: 14px 20px;
   text-decoration: none;
-  flex: 1;
 }
+
 .navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -184,20 +183,22 @@ body {
 
 .main_text {
   display: flex;
-  flex-direction: row;
+  padding: 4%;
+  flex-wrap: wrap;
 }
 
 .main_text1{
-  padding: 40px;
-  margin: 20px;
-  border-right: 1px solid rgb(220, 220, 220);
+  width: 40%;
+  min-width: 250px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .main_text2{
-  padding: 40px;
-  margin: 20px;
+  width: 60%;
+  min-width: 250px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -217,13 +218,11 @@ body {
 }
 
 .block5 {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  font-size: 100%;
   background-color: white;
-  width: 15%;
+  width: fit-content;
   background-color: #3E3F43;
-  padding: 20px;
+  padding: 1%;
   color: #fff;
   line-height: 30px;
 }

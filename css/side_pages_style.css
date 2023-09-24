@@ -83,7 +83,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
@@ -92,13 +92,13 @@ body {
   top: 0;
   position: sticky;
   background-color: #333;
-  position: sticky;
   color: white;  
   display: flex;
   text-align: center;
-  flex-shrink: 1;
   align-items: center;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .navbar a{
@@ -167,27 +167,27 @@ body {
 .block4 {
   padding: 5%;
   margin: 2%;
-  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 
-.block4 .column{ 
-  margin: 2%;
+.block4 .column{
+  width: 50%;
+}
+.block4 .row{
+  flex-wrap: wrap;
 }
 
 .block4 img{
   border: 1px solid rgb(220, 220, 220);
   padding: 2%;
   border-radius: 15px;
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  min-width: 200px;
 }
 
-.photo{
-  width: 50%;
-}
+
 
 
 .block4 h1, h2{
@@ -278,10 +278,11 @@ body {
 
 
 .block5 {
+  font-size: 100%;
   background-color: white;
-  width: 15%;
+  width: fit-content;
   background-color: #3E3F43;
-  padding: 20px;
+  padding: 1%;
   color: #fff;
   line-height: 30px;
 }
