@@ -280,11 +280,12 @@ body {
 .block5 {
   font-size: 100%;
   background-color: white;
-  width: fit-content;
+  width: 20%;
   background-color: #3E3F43;
   padding: 1%;
   color: #fff;
   line-height: 30px;
+  overflow-wrap: break-word;
 }
 
 
